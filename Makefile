@@ -54,6 +54,8 @@ clean:
 
 realclean: clean
 	rm -f $(MAIN_FILE).pdf
+	rm -f *.aux
+	rm -rf __pycache__
 
 dist: clean
 	cd .. ; \
