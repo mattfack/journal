@@ -9,7 +9,9 @@ set grid xtics lt 1 lw 4 lc rgb "#bbbbbb"
 set grid mxtics lt 1 lw 2 lc rgb "#dddddd"
 set grid mytics lt 1 lw 2 lc rgb "#dddddd"
 set title ""
-set xlabel "week of year"
+# set xlabel "week of year"
+# %%% ITA %%%
+set xlabel "settimana dell'anno"
 set xtics 0,2,52
 set ytics 0,1,10
 set mxtics 2
