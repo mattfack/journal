@@ -4,7 +4,7 @@ import locale
 import gen_events as events
 
 # Year to generate for
-year = 2021
+year = 2023
 
 # True if the week starts on Monday (European convention), False if it starts on Sunday.
 week_starts_on_Monday = True
@@ -37,6 +37,7 @@ events.add_event(year, 4, 18, "Pasquetta", True)
 events.add_event(year, 4, 25, "Festa della Liberazione", True)
 events.add_event(year, 5, 1, "Festa dei Lavoratori", True)
 events.add_event(year, 6, 2, "Festa della Repubblica", True)
+events.add_event(year, 11, 1, "Ognissanti", True)
 events.add_event(year, 12, 8, "Immacolata", True)
 events.add_event(year, 12, 24, "Vigilia di Natale", False)
 events.add_event(year, 12, 25, "Natale", True)
