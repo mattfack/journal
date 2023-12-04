@@ -35,7 +35,10 @@ events.add_event(year, 1, 6, "Epiphany", True)
 easter_month, easter_day = events.greg_easter(year)
 events.add_event(year, easter_month, easter_day-2, "Good Friday", True)
 events.add_event(year, easter_month, easter_day, "Easter", True)
-events.add_event(year, easter_month, easter_day+1, "Easter Monday", True)
+if (easter_month==3 & easter_day==31) or (easter_month==4 & easter_day==30):
+	events.add_event(year, easter_month+1, 1, "Easter Monday", True)
+else:
+	events.add_event(year, easter_month, easter_day+1, "Easter Monday", True)
 events.add_event(year, 4, 25, "Liberation Day", True)
 events.add_event(year, 5, 1, "Labor Day", True)
 events.add_event(year, 6, 2, "Republic Day", True)

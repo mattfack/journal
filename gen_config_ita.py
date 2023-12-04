@@ -4,7 +4,7 @@ import locale
 import gen_events as events
 
 # Year to generate for
-year = 2023
+year = 2024
 
 # True if the week starts on Monday (European convention), False if it starts on Sunday.
 week_starts_on_Monday = True
@@ -33,12 +33,19 @@ events.add_event(year, 1, 1, "Anno nuovo", True)
 events.add_event(year + 1, 1, 1, "Anno nuovo", True)
 events.add_event(year, 1, 6, "Epifania", True)
 easter_month, easter_day = events.greg_easter(year)
+print(easter_month)
+print(easter_day)
 events.add_event(year, easter_month, easter_day-2, "Venerdì Santo", True)
 events.add_event(year, easter_month, easter_day, "Pasqua", True)
-events.add_event(year, easter_month, easter_day+1, "Pasquetta", True)
+if (easter_month==3 and easter_day==31) or (easter_month==4 and easter_day==30):
+	events.add_event(year, easter_month+1, 1, "Pasquetta", True)
+else:
+	events.add_event(year, easter_month, easter_day+1, "Pasquetta", True)
 events.add_event(year, 4, 25, "Festa della Liberazione", True)
 events.add_event(year, 5, 1, "Festa dei Lavoratori", True)
 events.add_event(year, 6, 2, "Festa della Repubblica", True)
+events.add_event(year, 6, 26, "San Vigilio", True)
+events.add_event(year, 8, 15, "Ferragosto", True)
 events.add_event(year, 8, 28, "Coccolini <3", True)
 events.add_event(year, 11, 1, "Ognissanti", True)
 events.add_event(year, 12, 8, "Immacolata", True)

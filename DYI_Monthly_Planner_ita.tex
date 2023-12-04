@@ -173,12 +173,11 @@
 \newcommand{\MPRightPage}[1]{%
 	\hfill{\bfseries\Huge\MyYear\vstrut[-0.5em]{1.4em}}\par
 	\nointerlineskip
-
 	\begin{tabular*}{\textwidth}{MMMO}
 		\rowcolor{HeadMainBgMP}
 		\bfseries\vstrut{1.1em}\color{white}\DayD & \bfseries\vstrut{1.1em}\color{white}\DayE & \bfseries\vstrut{1.1em}\color{white}\DayF & \bfseries\vstrut{1.1em}\color{white}\DayG \\
 		% insert a dummy row: white, (cant use vspacing on previous \tabularnewline because it will turn colored as previous row)
-		\\[-0.8em]
+		\\[-1.08em]
 		#1{\CellFormatMP}{\CellFormatMPDisabled}
 	\end{tabular*}
 
