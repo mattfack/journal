@@ -20,6 +20,7 @@ You'll need `texlive-full` `gnuplot` and `ghostscript` (for `ps2pdf`) installed.
 ## Build
 * Update the year in [gen_config.py](https://github.com/dps/journal/blob/master/gen_config.py#L6) to the year you want to make a journal for.
 * Run `make` in the root directory of this repo.
+* Run `make ita` in the root directory of this repo to compile the italian version
 
 ## Docker (also the easiest way on Mac OS)
 
